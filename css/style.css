@@ -6,11 +6,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #bdcbdd;
+  /* background-color: #eef7fc; */
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(253, 253, 253, 0.1),
+      rgba(253, 253, 253, 0.1)
+    ),
+    url("../img/GeoBG_Blue.jpg");
+
+  /* background: url("../img/GeoBG_Blue.jpg"); */
 
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
+  border-bottom: 1px solid #86b1ea;
 }
 
 .logo {
@@ -42,7 +52,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  border-bottom: 2px solid #5a7eaa;
+  border-bottom: 2px solid #8dc63f;
 }
 
 .main-nav-link.nav-cta:link,
@@ -51,12 +61,14 @@
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   color: #fff;
-  background-color: #5a7eaa;
+  background-color: #1b5299;
+  border: 2px solid transparent;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  color: #5a7eaa;
+  color: #8dc63f;
+  border: 2px solid #8dc63f;
   background-color: #fff;
 }
 
@@ -103,17 +115,23 @@
 /* HERO SECTION */
 /******************************/
 .section-hero {
-  background-color: #bdcbdd;
+  background-color: #eef7fc;
+  background: url("../img/GeoBG_Blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #eef7fc;
+  border-bottom: 1px solid #86b1ea;
 
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 4.8rem 7rem 0;
 }
 
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 4.8rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   gap: 9.6rem;
   align-items: center;
 }
@@ -143,7 +161,7 @@
   height: 170px;
   color: #323232;
   background-color: #fff;
-  border: 7px solid #5a7eaa;
+  border: 5px solid #1b5299;
   border-bottom-left-radius: 45px;
   border-top-right-radius: 45px;
   z-index: 20;
@@ -164,7 +182,7 @@
   height: 200px;
   color: #323232;
   background-color: #fff;
-  border: 7px solid #5a7eaa;
+  border: 5px solid #1b5299;
   border-bottom-left-radius: 45px;
   border-top-right-radius: 45px;
   z-index: 25;
@@ -180,12 +198,12 @@
 .hero-img-3 {
   position: absolute;
   top: 60%;
-  left: 0%;
+  left: 3%;
   width: 380px;
   height: 250px;
   color: #323232;
   background-color: #fff;
-  border: 7px solid #5a7eaa;
+  border: 5px solid #1b5299;
   border-bottom-left-radius: 45px;
   border-top-right-radius: 45px;
   z-index: 30;
@@ -199,27 +217,30 @@
 }
 
 /******************************/
-/* WHAT I DO SECTION */
+/* SERVICES SECTION */
 /******************************/
 
-.section-what {
-  padding: 6.6rem 0;
-  background-color: #fdf2e9;
+.section-services {
+  padding: 5.8rem 0;
+  background-color: #e8f5e0;
+  border-top: 1px solid #e8f5e0;
+  border-bottom: 1px solid #8dc63f;
+  background: url("../img/GeoBG_Grn.jpg");
 }
 
-.what-title {
+.services-title {
   font-size: 4rem;
   font-weight: 600;
-  color: #5a7eaa;
+  color: #8dc63f;
   margin-bottom: 1.2rem;
 }
 
-.what-description {
+.services-description {
   font-size: 1.8rem;
   line-height: 1.8;
 }
 
-.what-img {
+.services-img {
   width: 100%;
 
   border-bottom-left-radius: 25px;
@@ -227,13 +248,13 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 }
 
-.what-img-box-lay {
+.services-img-box-lay {
   width: 100%;
   position: relative;
-  padding: 6rem;
+  padding: 6rem 6rem 6rem 6rem;
 }
 
-.what-img-lay1 {
+.services-img-lay1 {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -245,7 +266,7 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 }
 
-.what-img-lay2 {
+.services-img-lay2 {
   visibility: visible;
   top: 0;
   left: 0;
@@ -257,16 +278,27 @@
 }
 
 /******************************/
-/* TOOLS SECTION */
+/* PROCESS SECTION */
 /******************************/
 
-.section-tools {
+.section-process {
   padding: 4.8rem 0 3.2rem 0;
+  background-color: #eef7fc;
+  background: linear-gradient(
+      0deg,
+      rgba(238 247 252 / 45%),
+      rgba(238 247 252 / 45%)
+    ),
+    url("../img/GeoBG_Blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #eef7fc;
+  border-bottom: 1px solid #8dc63f;
 }
 
 .tool {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  background-color: #bdcbdd;
+  background-color: #fff;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow: hidden;
@@ -282,17 +314,11 @@
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
-.tool-tags {
-  margin-bottom: 1.2rem;
-  display: flex;
-  gap: 0.4rem;
-}
-
 .tool-title {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
-  color: #333;
-  font-weight: 700;
+  color: #8dc63f;
+  font-weight: 600;
   margin-bottom: 3.2rem;
   text-align: center;
 }
@@ -304,6 +330,11 @@
   gap: 2rem;
 }
 
+.list-icon {
+  color: #8dc63f;
+  height: 3rem;
+}
+
 .tool-attribute {
   font-size: 1.8rem;
   display: flex;
@@ -313,7 +344,10 @@
 }
 
 .tool-icon {
-  color: #5a7eaa;
+  color: #8dc63f;
+  border: 0.5rem solid #8dc63f;
+  border-radius: 50%;
+  padding: 2rem;
   height: 7.4rem;
   width: 7.4rem;
 }
@@ -338,15 +372,15 @@
 }
 
 .plan--energy {
-  background-color: #fdf2e9;
-  padding: 4.6rem;
-  border: 5px solid #5a7eaa;
+  background-color: #fff;
+  padding: 4.6rem 4.6rem 0.8rem 4.6rem;
+  border: 5px solid #1b5299;
 }
 
 .plan--drawing {
-  background-color: #fdf2e9;
-  padding: 4.6rem;
-  border: 5px solid #5a7eaa;
+  background-color: #fff;
+  padding: 4.6rem 4.6rem 0.8rem 4.6rem;
+  border: 5px solid #1b5299;
 }
 
 .plan-header {
@@ -355,7 +389,7 @@
 }
 
 .plan-title {
-  color: #5a7eaa;
+  color: #8dc63f;
   font-weight: 600;
   font-size: 3rem;
   text-transform: uppercase;
@@ -373,9 +407,22 @@
 /* EXPERIENCE SECTION */
 /******************************/
 
+.section-experience {
+  background: url("../img/GeoBG_Grn.jpg");
+  border-top: 1px solid #8dc63f;
+}
+
 .exper-entry {
   font-size: 1.75rem;
-  line-height: 1.25;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.exper-entry-intro {
+  font-size: 1.6rem;
+  line-height: 1.5;
   color: #333;
   font-weight: 400;
   margin-bottom: 1.6rem;
@@ -384,7 +431,7 @@
 .exper-entry-web {
   font-size: 1.5rem;
   line-height: 1.6;
-  color: #333;
+  color: #1b5299;
   font-weight: 400;
   margin-bottom: 0.85rem;
 }
@@ -392,36 +439,36 @@
 .exper-entry-web-subhead {
   font-size: 1.5rem;
   line-height: 1.6;
-  color: #333;
+  color: #8dc63f;
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .section-experience {
-  padding: 4.8rem 0 12.8rem 0;
+  padding: 1.4rem 0 9.6rem 0;
+  background-color: #e8f5e0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #8dc63f;
 }
 
 .exper {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /*background-color: #e67e22;*/
+
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-bottom-left-radius: 45px;
   border-top-right-radius: 45px;
-  background-color: #bdcbdd;
+  background-color: #fff;
 
-  /* background-image: linear-gradient(to right bottom, #5a7eaa, #bdcbdd); */
   overflow: hidden;
 }
 
 .exper-text-box {
   padding: 4rem 5rem;
-  color: #45260a;
 }
 
 .exper-text-box-web {
   padding: 2.8rem 5rem 2.8rem 2.2rem;
-  color: #45260a;
 }
 
 .exper .heading-secondary {
@@ -442,8 +489,14 @@
 
 .footer {
   padding: 8.8rem 0;
-  border-top: 1px solid #eee;
-  background-color: #fdf2e9;
+  border-top: 1px solid #e8f5e0;
+  /* background-color: #eef7fc; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(253, 253, 253, 0.1),
+      rgba(253, 253, 253, 0.1)
+    ),
+    url("../img/GeoBG_Blue.jpg");
 }
 
 .grid--footer {
@@ -499,3 +552,11 @@
 .footer-link:active {
   color: #555;
 }
+
+/* 
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

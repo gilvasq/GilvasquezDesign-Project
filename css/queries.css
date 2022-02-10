@@ -52,10 +52,6 @@ Instead, 1rem = 1em = 16px */
     height: 500px;
     width: 350px;
   }
-
-  .testimonials-container {
-    padding: 9.6rem 3.2rem;
-  }
 }
 
 /******************************/
@@ -67,6 +63,10 @@ Instead, 1rem = 1em = 16px */
     font-size: 50%;
   }
 
+  .section-hero {
+    padding-bottom: 6rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -75,6 +75,10 @@ Instead, 1rem = 1em = 16px */
 
   .hero-text-box {
     text-align: center;
+  }
+
+  .hero-description {
+    margin-bottom: 0;
   }
   .hero-img-box {
     display: none;
@@ -90,14 +94,14 @@ Instead, 1rem = 1em = 16px */
     height: 2.4rem;
   }
 
-  .what-number {
+  .services-number {
     font-size: 4rem;
   }
 
-  .what-img-lay2 {
+  .services-img-lay2 {
     visibility: hidden;
   }
-  .what-img-lay1 {
+  .services-img-lay1 {
     visibility: visible;
   }
 
@@ -105,24 +109,8 @@ Instead, 1rem = 1em = 16px */
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
 
-  .section-testimonials {
-    grid-template-columns: 1fr;
-  }
-
-  .section-pricing {
-    padding-top: 0;
-  }
-
   .exper {
     grid-template-columns: 3fr 2fr;
-  }
-
-  .exper-form {
-    grid-template-columns: 1fr;
-  }
-
-  .btn--form {
-    margin-top: 1.2rem;
   }
 
   /* MOBILE NAVIGATION */
@@ -197,7 +185,7 @@ Instead, 1rem = 1em = 16px */
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
+  .approach {
     grid-column: 1 / -1;
     justify-self: center;
   }
@@ -208,14 +196,6 @@ Instead, 1rem = 1em = 16px */
 
   .hero-img-box {
     display: none;
-  }
-
-  .section-pricing {
-    padding-top: 0;
-  }
-
-  .plan {
-    width: 100%;
   }
 
   .nav-col {
@@ -266,16 +246,24 @@ Instead, 1rem = 1em = 16px */
     height: 1.2rem;
   }
 
-  .what-img-box:nth-child(2) {
+  .services-img-box:nth-child(2) {
     grid-row: 1;
   }
 
-  .what-img-box:nth-child(6) {
+  .services-img-box:nth-child(6) {
     grid-row: 5;
   }
 
-  .what-img-box {
-    transform: translateY(2.4rem);
+  .services-img-box {
+    transform: translateY(1rem);
+  }
+
+  .services-img-box-lay {
+    padding-bottom: 2rem;
+  }
+
+  .services-text-box {
+    padding-bottom: 2.75rem;
   }
 
   .exper {
